@@ -76,6 +76,21 @@ img {
     border-radius: 2px;
 }
 
+/* Language Switch */
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px !important;
+    background: var(--bg-tertiary);
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.lang-switch:hover {
+    background: var(--border-color);
+}
+
 /* ===================================
    Header & Navigation
    =================================== */

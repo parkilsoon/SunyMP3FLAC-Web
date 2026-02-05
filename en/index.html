@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SunyMP3FLAC-Tagger - MP3/FLAC 태그 편집기</title>
+    <title>SunyMP3FLAC-Tagger - MP3/FLAC Tag Editor</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="MP3/FLAC 오디오 파일의 메타데이터(태그)와 가사를 쉽게 편집할 수 있는 무료 데스크톱 애플리케이션">
-    <meta name="keywords" content="MP3 태그 편집, FLAC 태그, 음악 메타데이터, 가사 편집, 앨범 커버, ID3 태그">
+    <meta name="description" content="Free desktop application to easily edit metadata (tags) and lyrics of MP3/FLAC audio files">
+    <meta name="keywords" content="MP3 tag editor, FLAC tag, music metadata, lyrics editor, album cover, ID3 tag">
     <meta name="author" content="SunyMP3FLAC-Tagger">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="SunyMP3FLAC-Tagger - MP3/FLAC 태그 편집기">
-    <meta property="og:description" content="MP3/FLAC 오디오 파일의 메타데이터와 가사를 쉽게 편집하세요">
+    <meta property="og:title" content="SunyMP3FLAC-Tagger - MP3/FLAC Tag Editor">
+    <meta property="og:description" content="Easily edit metadata and lyrics of your MP3/FLAC audio files">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://parkilsoon.github.io/SunyMP3FLAC-Web/">
+    <meta property="og:url" content="https://parkilsoon.github.io/SunyMP3FLAC-Web/en/">
     <meta property="og:image" content="https://parkilsoon.github.io/SunyMP3FLAC-Web/images/og-image.png">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/icon_512x512@2x.png">
+    <link rel="icon" type="image/png" href="../images/icon_512x512@2x.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -32,24 +32,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-en.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="nav-logo">
-                <img src="images/icon_512x512@2x.png" alt="SunyMP3FLAC-Tagger" class="logo-img">
+                <img src="../images/icon_512x512@2x.png" alt="SunyMP3FLAC-Tagger" class="logo-img">
                 <span class="logo-text">SunyMP3FLAC-Tagger</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#features">기능</a></li>
-                <li><a href="#screenshots">스크린샷</a></li>
-                <li><a href="#howto">사용법</a></li>
-                <li><a href="#download">다운로드</a></li>
-                <li><a href="en/" class="lang-switch"><i class="fas fa-globe"></i> English</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#howto">How to Use</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="../" class="lang-switch"><i class="fas fa-globe"></i> 한국어</a></li>
             </ul>
-            <button class="nav-toggle" aria-label="메뉴 열기">
+            <button class="nav-toggle" aria-label="Open menu">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
@@ -58,48 +59,48 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content" data-aos="fade-up">
-            <h1 class="hero-title">음악 파일 태그 편집, 이제 쉽게.</h1>
-            <p class="hero-subtitle">MP3/FLAC 메타데이터와 가사를 한 번에 관리하세요.</p>
+            <h1 class="hero-title">Music Tag Editing Made Easy.</h1>
+            <p class="hero-subtitle">Manage MP3/FLAC metadata and lyrics all in one place.</p>
             <div class="hero-buttons">
                 <a href="#download" class="btn btn-primary" id="hero-mac-btn">
-                    <i class="fab fa-apple"></i> macOS 다운로드
+                    <i class="fab fa-apple"></i> Download for macOS
                 </a>
                 <a href="#download" class="btn btn-secondary" id="hero-win-btn">
-                    <i class="fab fa-windows"></i> Windows 다운로드
+                    <i class="fab fa-windows"></i> Download for Windows
                 </a>
             </div>
-            <p class="hero-version">v1.0.0 | macOS & Windows 지원</p>
+            <p class="hero-version">v1.0.0 | macOS & Windows</p>
         </div>
         <div class="hero-image" data-aos="fade-up" data-aos-delay="200">
-            <img src="screenshots/main.png" alt="SunyMP3FLAC-Tagger 메인 화면">
+            <img src="../screenshots/main.png" alt="SunyMP3FLAC-Tagger Main Screen">
         </div>
     </section>
 
     <!-- Ad Banner 1 -->
     <div class="ad-container" data-aos="fade-in">
-        <!-- Google AdSense 코드가 들어갈 자리 -->
-        <div class="ad-placeholder">광고 영역</div>
+        <!-- Google AdSense code goes here -->
+        <div class="ad-placeholder">Advertisement</div>
     </div>
 
     <!-- Introduction Section -->
     <section class="intro" id="intro">
         <div class="container" data-aos="fade-up">
-            <h2 class="section-title">왜 SunyMP3FLAC-Tagger인가요?</h2>
+            <h2 class="section-title">Why SunyMP3FLAC-Tagger?</h2>
             <div class="intro-content">
                 <div class="intro-item">
                     <i class="fas fa-headphones"></i>
-                    <h3>음악 애호가를 위한</h3>
-                    <p>수천 곡의 음악 라이브러리를 깔끔하게 정리하세요. 자동 태그 검색으로 시간을 절약할 수 있습니다.</p>
+                    <h3>For Music Lovers</h3>
+                    <p>Organize thousands of songs in your music library. Save time with automatic tag search.</p>
                 </div>
                 <div class="intro-item">
                     <i class="fas fa-compact-disc"></i>
-                    <h3>DJ와 전문가를 위한</h3>
-                    <p>정확한 메타데이터는 전문적인 작업의 기본입니다. 일괄 편집으로 효율적으로 관리하세요.</p>
+                    <h3>For DJs & Professionals</h3>
+                    <p>Accurate metadata is essential for professional work. Manage efficiently with batch editing.</p>
                 </div>
                 <div class="intro-item">
                     <i class="fas fa-folder-open"></i>
-                    <h3>라이브러리 관리자를 위한</h3>
-                    <p>앨범 커버, 가사, 트랙 정보까지 완벽하게 관리되는 음악 컬렉션을 만들어보세요.</p>
+                    <h3>For Library Managers</h3>
+                    <p>Create a perfectly managed music collection with album covers, lyrics, and track info.</p>
                 </div>
             </div>
         </div>
@@ -108,51 +109,51 @@
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">주요 기능</h2>
+            <h2 class="section-title" data-aos="fade-up">Key Features</h2>
             <div class="features-grid">
                 <div class="feature-card featured" data-aos="fade-up" data-aos-delay="100">
-                    <span class="feature-badge">핵심 기능</span>
+                    <span class="feature-badge">Key Feature</span>
                     <div class="feature-icon">
                         <i class="fas fa-search"></i>
                     </div>
-                    <h3>자동 태그 검색</h3>
-                    <p>iTunes API를 통해 곡 정보를 자동으로 검색하여 태그를 채워줍니다.</p>
+                    <h3>Auto Tag Search</h3>
+                    <p>Automatically search and fill in song information via iTunes API.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="150">
                     <div class="feature-icon">
                         <i class="fas fa-align-left"></i>
                     </div>
-                    <h3>가사 자동 검색</h3>
-                    <p>LRCLIB API로 동기화 가사와 일반 가사를 자동으로 찾아줍니다.</p>
+                    <h3>Auto Lyrics Search</h3>
+                    <p>Automatically find synced and plain lyrics via LRCLIB API.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon">
                         <i class="fas fa-image"></i>
                     </div>
-                    <h3>앨범 커버 관리</h3>
-                    <p>드래그 앤 드롭으로 앨범 아트를 쉽게 추가, 변경, 삭제하세요.</p>
+                    <h3>Album Cover Management</h3>
+                    <p>Easily add, change, or delete album art with drag and drop.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="250">
                     <div class="feature-icon">
                         <i class="fas fa-layer-group"></i>
                     </div>
-                    <h3>일괄 편집</h3>
-                    <p>여러 파일을 한 번에 선택하여 동시에 편집할 수 있습니다.</p>
+                    <h3>Batch Editing</h3>
+                    <p>Select multiple files and edit them all at once.</p>
                 </div>
                 <div class="feature-card featured" data-aos="fade-up" data-aos-delay="300">
-                    <span class="feature-badge">핵심 기능</span>
+                    <span class="feature-badge">Key Feature</span>
                     <div class="feature-icon">
                         <i class="fas fa-volume-up"></i>
                     </div>
-                    <h3>ReplayGain 지원</h3>
-                    <p>볼륨 노멀라이제이션으로 일정한 음량을 유지하세요.</p>
+                    <h3>ReplayGain Support</h3>
+                    <p>Maintain consistent volume levels with volume normalization.</p>
                 </div>
                 <div class="feature-card" data-aos="fade-up" data-aos-delay="350">
                     <div class="feature-icon">
                         <i class="fas fa-file-audio"></i>
                     </div>
-                    <h3>MP3 & FLAC 지원</h3>
-                    <p>가장 많이 사용되는 오디오 포맷을 완벽하게 지원합니다.</p>
+                    <h3>MP3 & FLAC Support</h3>
+                    <p>Full support for the most popular audio formats.</p>
                 </div>
             </div>
         </div>
@@ -161,19 +162,19 @@
     <!-- Screenshots Section -->
     <section class="screenshots" id="screenshots">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">스크린샷</h2>
+            <h2 class="section-title" data-aos="fade-up">Screenshots</h2>
             <div class="screenshot-gallery" data-aos="fade-up" data-aos-delay="100">
                 <div class="screenshot-item active">
-                    <img src="screenshots/main.png" alt="메인 화면">
-                    <p class="screenshot-caption">메인 화면 - 파일 목록과 메타데이터 편집</p>
+                    <img src="../screenshots/main.png" alt="Main Screen">
+                    <p class="screenshot-caption">Main Screen - File list and metadata editing</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="screenshots/autosearch.png" alt="자동 검색">
-                    <p class="screenshot-caption">자동 가사 및 메타데이터 검색 기능</p>
+                    <img src="../screenshots/autosearch.png" alt="Auto Search">
+                    <p class="screenshot-caption">Auto lyrics and metadata search feature</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="screenshots/lrclib.png" alt="가사 검색">
-                    <p class="screenshot-caption">가사 검색 및 편집 기능</p>
+                    <img src="../screenshots/lrclib.png" alt="Lyrics Search">
+                    <p class="screenshot-caption">Lyrics search and editing feature</p>
                 </div>
             </div>
             <div class="screenshot-nav">
@@ -186,46 +187,46 @@
 
     <!-- Ad Banner 2 -->
     <div class="ad-container" data-aos="fade-in">
-        <!-- Google AdSense 코드가 들어갈 자리 -->
-        <div class="ad-placeholder">광고 영역</div>
+        <!-- Google AdSense code goes here -->
+        <div class="ad-placeholder">Advertisement</div>
     </div>
 
     <!-- How To Section -->
     <section class="howto" id="howto">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">사용법</h2>
+            <h2 class="section-title" data-aos="fade-up">How to Use</h2>
             <div class="howto-steps">
                 <div class="howto-step" data-aos="fade-up" data-aos-delay="100">
                     <div class="step-number">1</div>
                     <div class="step-icon">
                         <i class="fas fa-folder-plus"></i>
                     </div>
-                    <h3>파일 추가</h3>
-                    <p>음악 파일을 드래그하거나 폴더를 선택하세요</p>
+                    <h3>Add Files</h3>
+                    <p>Drag music files or select a folder</p>
                 </div>
                 <div class="howto-step" data-aos="fade-up" data-aos-delay="200">
                     <div class="step-number">2</div>
                     <div class="step-icon">
                         <i class="fas fa-edit"></i>
                     </div>
-                    <h3>태그 편집</h3>
-                    <p>메타데이터를 직접 수정하거나 자동 검색하세요</p>
+                    <h3>Edit Tags</h3>
+                    <p>Manually edit metadata or use auto search</p>
                 </div>
                 <div class="howto-step" data-aos="fade-up" data-aos-delay="300">
                     <div class="step-number">3</div>
                     <div class="step-icon">
                         <i class="fas fa-music"></i>
                     </div>
-                    <h3>가사 추가</h3>
-                    <p>가사를 자동으로 검색하거나 직접 입력하세요</p>
+                    <h3>Add Lyrics</h3>
+                    <p>Auto search lyrics or enter manually</p>
                 </div>
                 <div class="howto-step" data-aos="fade-up" data-aos-delay="400">
                     <div class="step-number">4</div>
                     <div class="step-icon">
                         <i class="fas fa-save"></i>
                     </div>
-                    <h3>저장</h3>
-                    <p>모두 저장 버튼으로 변경사항을 적용하세요</p>
+                    <h3>Save</h3>
+                    <p>Apply changes with the Save All button</p>
                 </div>
             </div>
         </div>
@@ -234,8 +235,8 @@
     <!-- Download Section -->
     <section class="download" id="download">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up">다운로드</h2>
-            <p class="download-subtitle" data-aos="fade-up" data-aos-delay="100">무료로 다운로드하여 사용해보세요</p>
+            <h2 class="section-title" data-aos="fade-up">Download</h2>
+            <p class="download-subtitle" data-aos="fade-up" data-aos-delay="100">Download for free and try it out</p>
             <div class="download-buttons" data-aos="fade-up" data-aos-delay="200">
                 <a href="https://github.com/parkilsoon/SunyMP3FLAC-Tagger/releases/latest/download/SunyTagger-mac.dmg" class="download-btn download-mac" id="download-mac-btn">
                     <i class="fab fa-apple"></i>
@@ -255,7 +256,7 @@
             <p class="download-version" data-aos="fade-up" data-aos-delay="300">
                 <span class="version-badge">v1.0.0</span>
                 <a href="https://github.com/parkilsoon/SunyMP3FLAC-Tagger/releases" target="_blank" class="version-link">
-                    릴리스 노트 보기 <i class="fas fa-external-link-alt"></i>
+                    View Release Notes <i class="fas fa-external-link-alt"></i>
                 </a>
             </p>
         </div>
@@ -264,10 +265,10 @@
     <!-- Support Section -->
     <section class="support" id="support">
         <div class="container" data-aos="fade-up">
-            <h2 class="section-title">개발자 후원</h2>
-            <p class="support-message">이 프로그램이 도움이 되셨다면 커피 한 잔 사주세요</p>
+            <h2 class="section-title">Support the Developer</h2>
+            <p class="support-message">If you find this app helpful, consider buying me a coffee</p>
             <div class="support-button">
-                <!-- Buy Me a Coffee 버튼 - YOUR_USERNAME을 실제 username으로 교체하세요 -->
+                <!-- Buy Me a Coffee button - Replace YOUR_USERNAME with actual username -->
                 <a href="https://www.buymeacoffee.com/YOUR_USERNAME" target="_blank" class="bmc-button">
                     <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee">
                 </a>
@@ -277,8 +278,8 @@
 
     <!-- Ad Banner 3 -->
     <div class="ad-container" data-aos="fade-in">
-        <!-- Google AdSense 코드가 들어갈 자리 -->
-        <div class="ad-placeholder">광고 영역</div>
+        <!-- Google AdSense code goes here -->
+        <div class="ad-placeholder">Advertisement</div>
     </div>
 
     <!-- Footer -->
@@ -286,7 +287,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="images/icon_512x512@2x.png" alt="SunyMP3FLAC-Tagger">
+                    <img src="../images/icon_512x512@2x.png" alt="SunyMP3FLAC-Tagger">
                     <span>SunyMP3FLAC-Tagger</span>
                 </div>
                 <div class="footer-links">
@@ -294,7 +295,7 @@
                         <i class="fab fa-github"></i> GitHub
                     </a>
                     <a href="https://github.com/parkilsoon/SunyMP3FLAC-Tagger/issues" target="_blank">
-                        <i class="fas fa-bug"></i> 버그 리포트
+                        <i class="fas fa-bug"></i> Bug Report
                     </a>
                 </div>
             </div>
@@ -308,6 +309,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <!-- Custom JS -->
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
