@@ -372,6 +372,45 @@ img {
     line-height: 1.6;
 }
 
+/* Featured Card Style */
+.feature-card.featured {
+    position: relative;
+    border-color: var(--accent-color);
+    background: linear-gradient(135deg, rgba(74, 144, 217, 0.15) 0%, var(--bg-secondary) 100%);
+    box-shadow: 0 0 20px rgba(74, 144, 217, 0.2);
+}
+
+.feature-card.featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-color), var(--accent-hover));
+    border-radius: 16px 16px 0 0;
+}
+
+.feature-card.featured:hover {
+    box-shadow: 0 10px 40px rgba(74, 144, 217, 0.3);
+}
+
+.feature-card.featured .feature-icon {
+    background: rgba(74, 144, 217, 0.25);
+}
+
+.feature-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--accent-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
 /* ===================================
    Screenshots Section
    =================================== */
